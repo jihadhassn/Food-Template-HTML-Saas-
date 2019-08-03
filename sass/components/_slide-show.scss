@@ -1,0 +1,67 @@
+.slidshow{
+
+    background-color: $primary-color;
+    width: 50%;
+    height: 37rem;
+    position: relative;
+    top: -9.2rem;
+&--twitter-feedback{
+    background-color: #f1f1f1;
+}
+
+    &__wripper{
+        width: 60%;
+        overflow: hidden;
+        margin-left: 8.4rem;
+    }
+    &__slider-header{
+        margin-left: 7.1rem;
+         margin-top: 4.4rem;
+    }
+
+    &__slides{
+        animation: slide-show ;
+        animation-duration:10s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+   animation-play-state: running;
+    }
+
+    &--imgshow{
+        border: 1.2rem solid  #f9f9f9;
+        border-radius: 50%;
+        width: 15.0rem;
+        height: 15.0rem;
+    }
+    &--text-decoration{
+        color: $white-color;
+        font-family:$font;
+        font-size: 4.2rem;
+         line-height: 4rem;
+         font-weight: 400;
+         margin-top: 25px;
+    }
+    &--color-text{
+        color: $primary-color;
+    }
+    &__images-slider{
+        width: 25%;
+        position: relative;
+        
+    }
+    &__text-slider{
+        width: 100%;
+        position: relative;
+        color: $white-color;
+    }
+   
+    &__client-name{
+        font-family: $font;
+        color: $white-color;
+        font-size: 2.8rem;
+        font-weight: 200;
+    }
+    &--color-p{
+        color:  rgba(33,39,57,.7);
+    }
+}

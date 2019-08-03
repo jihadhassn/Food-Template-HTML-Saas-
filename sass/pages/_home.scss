@@ -1,0 +1,75 @@
+/* contacts*/
+.contacts-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%; 
+    margin-right: 3.0rem;
+   background-color: $white-color;
+   
+}
+/*nav-bar*/
+.nav-logo-block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+/*items-section*/
+.items-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding-bottom: 10.5rem;
+} 
+/*small-items-box*/
+.menue-day-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+/*milestone-block*/
+.milestone-counter-and-video-block{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+.milestone-counter-section{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    top: -2.6rem;
+    position: relative;
+}
+
+/*slideshow-feedback*/
+.slid-show-block{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+/*footer*/
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}

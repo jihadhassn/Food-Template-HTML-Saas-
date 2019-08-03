@@ -1,0 +1,129 @@
+.nav-bar{
+    width: 56%;
+    position: absolute;
+   right: 9.5rem;
+}
+.btn{
+
+    &--menue{
+    display: inline-flex;
+   width: 100%;
+    margin-top: 6.6rem;
+   // padding-right: 21.5rem;
+   // padding-left: 1.5rem;    
+ 
+    }
+    &--menue--btns{
+    
+        //text-transform: uppercase;
+       // color: $white-color;
+        color: $white-color;
+        float: left;
+        padding: 1.6rem 0.7rem;
+        list-style-type: none;
+
+        &:hover{
+          @include block-for-color($primary-color);
+        }
+    }
+   &--menue-hover
+    {
+        &:hover + .dropdown  {
+            // display: block;
+            transition-duration: .3s;
+            visibility: visible;
+        }
+    }   
+
+
+    &--font
+    {
+        font-family: $font;
+       font-size: $font-size;
+       
+    }
+    &--rounded{  
+        padding: .3rem 2.4rem; //reservation
+        border:$primary-border;
+        border-radius:$rounded-radius;
+    } 
+    &--regest-specif
+    {
+      padding: .3rem 2.4rem;
+      font-weight: 400!important;  
+      line-height: 3.9000000000000004rem;
+      margin-left: 1.5rem;
+      &:hover{
+         @include block-color($trans-color,$primary-color);
+      }
+    }
+    &--rounded-1{ //ourmenue
+     &:hover{
+        @include block-color($trans-color,$primary-color);
+     }
+    }
+    /*
+    &--rounded-3{
+        padding: 0.5rem 2.6rem; //booking submit
+        border:$primary-border;
+        border-radius:$rounded-radius;
+    }
+    &--rounded-2{
+        padding: 0.5rem 3.6rem; //subscribe
+        border:$primary-border;
+        border-radius: $rounded-radius;
+    }
+
+*/
+    &--primary{ //reservation,subscribe ,bookingsubmit,booking a table
+        color: $white-color;
+        background-color:$primary-color;
+        border:$primary-border; 
+
+    }
+    
+    &--white--color{//menue
+        color:$primary-color;
+        background-color: $white-color;
+        border:$white-border;
+    }
+    &--square{
+        border: 0.3rem solid $primary-color;
+        border-radius: 7%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    &--white--color-1{ //special
+        color: $primary-color;
+      background-color: transparent;
+
+    }
+/*
+    &--square{    //special
+       padding: 0 15px;
+       border: $primary-border;
+    }*/
+/*
+        // &--onclick--decoration{
+
+        // }
+    &--descrition{ //piza mexizn w keda
+        font-size: 3.2rem;
+
+    }
+  */
+ /* .link{ 
+    color: $white-color;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.0999999999999996rem;
+
+  }*/
+  &--btm-btns-header{
+    margin: 1.6rem .6rem 0;
+    padding: 1.5rem 3rem;
+    border-radius: $rounded-radius;
+    line-height: 3.9000000000000004rem;
+}
+
+}

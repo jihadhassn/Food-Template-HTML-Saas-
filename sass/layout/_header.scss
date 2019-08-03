@@ -1,0 +1,45 @@
+.nav-main
+ {
+     background-color: $trans-color;
+    // float: right;
+  //  margin-top: 1.6rem;
+    color: black;
+   
+ }
+
+
+ .header{
+  background-image:
+    url(../images/zikzak-bottom-white.png)  
+    ,url(../images/zikzak-bottom-ash-light.png)
+    ,url(../images/zikzak-top-white.png)  
+   ,url(../images/zikzak-top-ash-light.png)
+   , url(../images/zikzak-bg.jpg);
+    background-position-x: center;
+    background-position-y: top,top,bottom,bottom,top;
+    background-repeat: no-repeat;
+    position: relative;
+  width: 100%;
+  height: 55rem;
+
+
+
+
+
+  // &__zigzag-header{
+  //   background-image:
+  //   url(../images/zikzak-bottom-white.png)  
+  //   ,url(../images/zikzak-bottom-ash-light.png)
+  //   ,url(../images/zikzak-top-white.png)  
+  //  ,url(../images/zikzak-top-ash-light.png)
+  //   url(../images/zikzak-bg.jpg);
+  //   background-position-x: center;
+  //   background-position-y: top,top,bottom,bottom,top;
+  //   background-repeat: no-repeat;
+  // }
+}
+.contact-section{
+  position: relative;
+  display: flex;
+  width: 100%;
+}

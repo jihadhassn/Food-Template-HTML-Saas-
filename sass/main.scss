@@ -1,0 +1,25 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';     
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/buttons';
+@import'components/form';
+@import 'components/icons';
+@import'components/imags';
+@import 'components/items-box';
+@import 'components/menue-day';
+@import 'components/milestone';
+@import 'components/nav-bar';
+@import'components/slide-show';
+@import'components/small-items-box';
+@import'components/text';       
+
+
+@import'layout/footer'; 
+@import 'layout/header';
+@import'pages/home';   

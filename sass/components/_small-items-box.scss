@@ -1,0 +1,24 @@
+
+.small-item{
+    position: relative;
+    margin-top: 2.1rem;
+    width: 50%;
+  
+   // margin-left: 5%;
+    //margin-right: 5%;
+    height: 15rem;
+    animation: move 1.5s; 
+    &:hover{
+        
+        .item-box__img-item-1 {
+            transform: scale(1.2);
+        }
+        .items-block__title-and-price{
+            background-color: $primary-color;
+            color: $white-color;
+        }
+       .items-block__name-title,.items-block__price-number{
+           color: $white-color;
+    }
+    }
+}

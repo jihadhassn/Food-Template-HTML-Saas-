@@ -1,0 +1,60 @@
+.header-center{
+
+    text-align: center;
+    margin:  auto;
+   
+     &--text{
+
+    color: $white-color;
+    font-size: 11rem;
+    
+  &--h3-hot-spicy{
+    font-family: $font;
+    font-weight: 400;
+}
+  &--h2-American {      
+    font-weight: 900;
+    margin: 0 0 1.6rem;
+    line-height: 13rem;
+} 
+}
+&--text-center{
+
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    width: 98%;
+   padding-bottom: 5rem;
+   margin-top: 10.5rem;
+}
+&--h3-About{
+   color: $black-color;
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem;
+
+    }
+&--h2-welcom{
+    color:$primary-color;
+    font-family: $font;
+    font-size: 6.8rem;
+    line-height: 8rem;
+    font-weight: 500;
+    
+     }
+   &--center-p{
+       display: block;
+    
+    margin-left: 5.5rem;
+    padding: 0 20%; 
+    margin-bottom: 4.2rem;  
+    line-height: 2.6rem;
+
+    }
+    &--special-div{
+        margin-bottom: 6.8rem;
+        margin-top: 6.8rem;  
+        width: 100%;
+
+    }
+
+}

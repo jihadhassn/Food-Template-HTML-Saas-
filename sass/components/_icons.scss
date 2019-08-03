@@ -1,0 +1,91 @@
+.opening-hour-and-numbers{
+        margin-left: 10.0rem;
+        width: 42%;
+        margin: 1.1rem 0;
+        margin-left:8.1rem;
+        &--coloricon{ 
+        
+            @include color-icon($icon-color);
+    }
+       &--icons-size{
+        margin-right: 0.4rem;
+        padding-left: 1.5rem;
+        line-height: $line-height;
+        
+       }
+       
+    }
+    .social-media-contacts{     
+        width: 20%;    
+        position: relative;
+        right: 3.4rem;
+        margin: 1.1rem 0;
+        //top: -36px;
+
+         &--coloricon-1{  
+            color:$twitter-color;
+           
+             } 
+
+             &--coloricon-2{  
+             color:$facebook-color;
+         }
+         
+         &--coloricon-3{  
+            color:$pinterest-color;
+
+        }
+
+        &--coloricon-4{  
+            color:$google-color;
+        }
+
+        &--coloricon-5{  
+            color:$youtube-color;
+        }
+
+   &--social{
+        font-size: $font-size; 
+        text-align: center;
+        display: table-cell;
+                              //to make icon in center 
+        vertical-align: middle; 
+          padding-right: 0.2rem;
+            padding-left: 0.2rem;
+            transition-duration: .6s;
+         }
+        &--bg-icon{
+            background-color: $gray-light;
+            border-radius: 5.0rem; 
+            width: 4rem;
+            height: 4rem;
+            padding-right: 0.2rem;
+            &:hover{ 
+                
+                @include bg-icon;
+             //  transition: all  0.3 ease-out 0s;
+             .social-media-contacts--social{
+                @include social-icon;
+              
+             }
+            }
+        }
+    }
+    .arrow{
+        color: $white-color;
+    }
+    .display-list{
+        display: inline-flex;
+    }
+// .bg-zigzak-contacts{
+//     background:
+//     url(../images/zikzak-bottom-white.png)  
+//      ,url(../images/zikzak-bottom-ash-light.png);
+//      background-position-x: center;
+//      background-position-y: top;
+//      background-repeat: no-repeat;
+//      width: 100%;
+//      background-size: cover;
+//     height: 150px;
+
+// }

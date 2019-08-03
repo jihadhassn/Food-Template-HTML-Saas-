@@ -1,0 +1,182 @@
+
+.items-block {
+
+    &--small {
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+    }
+
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: $items-box-width;
+    height: $items-box-height;
+    margin-bottom: 6rem;
+    &:hover {
+        .item-box__img-item-1 {
+            transform: scale(1.2);
+        }
+        .item-box__overlay-circle {
+            transform: scale(1.2);
+            transform: rotateX(0deg);
+            opacity: 1;
+        }
+        .item-line {
+            //  background-color:red;
+            border-top: .3rem solid $primary-color;
+        }
+        .item-info__title {
+            color: $primary-color;
+        }
+        
+    }
+    .item-box {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        line-height: 2.4rem;
+        top: 1.5rem;
+        border-radius: 50%;
+        background-color:#ddd;
+        box-shadow: 0 0 10px rgba(0,0,0,.25);
+        &__overlay-circle {
+            background: rgba(33, 39, 57, .4);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0rem;
+            z-index: 10;
+            border-radius: 50%;
+            opacity: 0;
+            transform: rotateX(90deg);
+            transform-origin: bottom;
+            transition: all 0.8s;
+            text-align: center; // vertical-align: middle;
+        }
+        &__img-item-1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: all .5s;
+            background-size: cover;
+            margin: auto;
+            top: 0rem;
+            img {
+                width: 85%; //80 10 85 7
+                padding: 7%;
+                border-radius: 50%;
+            }
+        }
+        .item-box__icon-prop {
+            @include color-icon($white-color);
+            font-size: 2.6rem;
+            position: absolute;
+            top: calc(50% - 4.2rem);
+            line-height: 6.300000000000001rem;
+            &:hover {
+                @include block-for-color($primary-color);
+            }
+        }
+    }
+    .item-line {
+        position: relative;
+        z-index: 2;
+        width: 30rem;
+        height: 11.2rem;
+        left: 1.1rem;
+        top: -4.9rem;
+        background-color: #f9f9f9;
+    }
+    .item-info {
+        position: relative;
+        z-index: 4;
+        width: 30rem;
+        height: 11.2rem;
+        left: 1.8rem;
+        top: -16.1rem;
+        background-color: #f9f9f9;
+     
+        text-align: center;
+        &__subtitle {
+            font-family: $font;
+            font-size: $font-size;
+            line-height: 3.9000000000000004rem;
+            color: $primary-color;
+            margin: 0;
+            font-weight: 400;
+        }
+        &__title {
+            font-size: $font-size;
+            line-height: 3.9000000000000004rem;
+            color: #212739;
+            font-weight: 900;
+            margin: 0;
+        }
+    }
+    .price-item {
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        top: 26rem;
+        left: 13.1rem;
+        background-color: $white-color;
+        text-align: center;
+        &__price-num {
+            font-family: $font;
+            font-size: $font-size;
+            line-height: 6rem;
+            color: #212739; 
+        }
+        &__dollar {
+            position: absolute;
+            color: $primary-color;
+        }
+    }
+    &__title-block {
+        //  position: relative;
+        position: absolute;
+        top: 1.7rem;
+        left: 12.1rem;
+        z-index: 0;
+    }
+    &__title-and-price {
+        //background-color: $white-color;
+        //  position: relative
+        background-color: $white-color;
+        margin-bottom: 1rem; 
+        border-radius: 0 5rem 5rem 0;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 90%;
+        text-align: left;
+    }
+    &__name-title {
+        font-family: $font;
+        font-size: 3.2rem;
+        color: black;
+        padding: 0.5rem 1.5rem 0.5rem 6rem; // margin-left: -1rem;
+    }
+    &__price {
+        position: absolute;
+        right: 5.5rem; //text-align: center;
+        padding-top: 0.9rem;
+        top: 1.8rem;
+    }
+    &__price-number {
+        color: $primary-color;
+        font-weight: 400;
+        font-family: Cookie, cursive;
+        font-size: 4.2rem;
+    }
+    &__description {
+        //position: absolute;
+        margin-left: 5.1rem;
+        width:62%
+    }
+}

@@ -1,0 +1,801 @@
+@keyframes move {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes slide-show {
+  10% {
+    left: 500px; }
+  20% {
+    left: 500px; }
+  30% {
+    left: 500px; }
+  40% {
+    left: 500px; }
+  50% {
+    left: 500px; }
+  60% {
+    left: 500px; }
+  70% {
+    left: 1000px; }
+  80% {
+    left: 1000px; }
+  90% {
+    left: 1000px; }
+  100% {
+    left: 1000px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: Lato,sans-serif;
+  color: rgba(33, 39, 57, 0.7);
+  background-color: #f9f9f9; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.upper {
+  text-transform: uppercase; }
+
+.space-letter {
+  letter-spacing: .1rem; }
+
+.text-center {
+  text-align: center; }
+
+.nav-bar {
+  width: 56%;
+  position: absolute;
+  right: 9.5rem; }
+
+.btn {
+  /*
+    &--rounded-3{
+        padding: 0.5rem 2.6rem; //booking submit
+        border:$primary-border;
+        border-radius:$rounded-radius;
+    }
+    &--rounded-2{
+        padding: 0.5rem 3.6rem; //subscribe
+        border:$primary-border;
+        border-radius: $rounded-radius;
+    }
+
+*/
+  /*
+    &--square{    //special
+       padding: 0 15px;
+       border: $primary-border;
+    }*/
+  /*
+        // &--onclick--decoration{
+
+        // }
+    &--descrition{ //piza mexizn w keda
+        font-size: 3.2rem;
+
+    }
+  */
+  /* .link{ 
+    color: $white-color;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.0999999999999996rem;
+
+  }*/ }
+  .btn--menue {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 6.6rem; }
+  .btn--menue--btns {
+    color: #ffffff;
+    float: left;
+    padding: 1.6rem 0.7rem;
+    list-style-type: none; }
+    .btn--menue--btns:hover {
+      color: #e62b4c; }
+  .btn--menue-hover:hover + .dropdown {
+    transition-duration: .3s;
+    visibility: visible; }
+  .btn--font {
+    font-family: "Cookie", cursive;
+    font-size: 2.6rem; }
+  .btn--rounded {
+    padding: .3rem 2.4rem;
+    border: 0.2rem solid #e62b4c;
+    border-radius: 5rem; }
+  .btn--regest-specif {
+    padding: .3rem 2.4rem;
+    font-weight: 400 !important;
+    line-height: 3.9000000000000004rem;
+    margin-left: 1.5rem; }
+    .btn--regest-specif:hover {
+      background-color: transparent;
+      color: #e62b4c; }
+  .btn--rounded-1:hover {
+    background-color: transparent;
+    color: #e62b4c; }
+  .btn--primary {
+    color: #ffffff;
+    background-color: #e62b4c;
+    border: 0.2rem solid #e62b4c; }
+  .btn--white--color {
+    color: #e62b4c;
+    background-color: #ffffff;
+    border: 0.2rem solid #ffffff; }
+  .btn--square {
+    border: 0.3rem solid #e62b4c;
+    border-radius: 7%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .btn--white--color-1 {
+    color: #e62b4c;
+    background-color: transparent; }
+  .btn--btm-btns-header {
+    margin: 1.6rem .6rem 0;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    line-height: 3.9000000000000004rem; }
+
+.form-block {
+  position: relative;
+  padding: 11rem 0 0 0; }
+  .form-block__header-reservation {
+    margin-bottom: 6.8rem;
+    padding: 0; }
+  .form-block--form-card {
+    position: relative;
+    background-color: #212739;
+    border-radius: 0.6rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 4.4rem;
+    text-align: center;
+    top: -25.1rem; }
+  .form-block--form-field {
+    padding: 1rem 0 1rem 1rem;
+    background-color: #ffffff;
+    width: 47%;
+    margin: 0 .5% 1.6rem;
+    border: 0.3rem solid #ddd; }
+    .form-block--form-field:hover {
+      border: 0.3rem solid #e62b4c; }
+  .form-block--form-right-side {
+    border-radius: 2.5rem 0 0 2.5rem; }
+  .form-block--form-left-side {
+    border-radius: 0 2.5rem 2.5rem 0; }
+  .form-block--submit {
+    padding: .9rem 2.6rem; }
+    .form-block--submit:hover {
+      background-color: transparent;
+      background-color: transparent;
+      color: #e62b4c; }
+  .form-block--select-style {
+    width: 48%; }
+  .form-block--calling-style {
+    position: relative;
+    top: -22rem; }
+  .form-block--numbers-style {
+    display: flex;
+    justify-content: center; }
+  .form-block--li-style {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; }
+
+.opening-hour-and-numbers {
+  margin-left: 10.0rem;
+  width: 42%;
+  margin: 1.1rem 0;
+  margin-left: 8.1rem; }
+  .opening-hour-and-numbers--coloricon {
+    color: #ee6b82; }
+  .opening-hour-and-numbers--icons-size {
+    margin-right: 0.4rem;
+    padding-left: 1.5rem;
+    line-height: 2.6rem; }
+
+.social-media-contacts {
+  width: 20%;
+  position: relative;
+  right: 3.4rem;
+  margin: 1.1rem 0; }
+  .social-media-contacts--coloricon-1 {
+    color: #1da1f2; }
+  .social-media-contacts--coloricon-2 {
+    color: #365899; }
+  .social-media-contacts--coloricon-3 {
+    color: #d4193a; }
+  .social-media-contacts--coloricon-4 {
+    color: #d4193a; }
+  .social-media-contacts--coloricon-5 {
+    color: #cd201f; }
+  .social-media-contacts--social {
+    font-size: 2.6rem;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    transition-duration: .6s; }
+  .social-media-contacts--bg-icon {
+    background-color: #e8e9eb;
+    border-radius: 5.0rem;
+    width: 4rem;
+    height: 4rem;
+    padding-right: 0.2rem; }
+    .social-media-contacts--bg-icon:hover {
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(52, 61, 71, 0.2); }
+      .social-media-contacts--bg-icon:hover .social-media-contacts--social {
+        font-size: 1.6rem; }
+
+.arrow {
+  color: #ffffff; }
+
+.display-list {
+  display: inline-flex; }
+
+.logo {
+  max-width: 12.0rem;
+  margin-top: 4.3rem;
+  margin-left: 6.5rem;
+  position: absolute;
+  width: 10%; }
+
+.bg-imge {
+  background: url(../images/zikzak-bottom-white.png), url(../images/zikzak-bottom-ash-light.png), url(../images/zikzak-top-white.png), url(../images/zikzak-top-ash-light.png), url(../images/zikzak-bg.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top,top,bottom,bottom,top;
+  overflow: hidden;
+  height: 85rem;
+  margin-top: -1.6rem;
+  flex-wrap: wrap;
+  display: flex; }
+  .bg-imge--background {
+    background-image: url(../images/zikzak-top-white.png) bottom center no-repeat;
+    width: 100%; }
+
+.items-block {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 35rem;
+  height: 35rem;
+  margin-bottom: 6rem; }
+  .items-block--small {
+    width: 15rem;
+    height: 15rem;
+    position: absolute; }
+  .items-block:hover .item-box__img-item-1 {
+    transform: scale(1.2); }
+  .items-block:hover .item-box__overlay-circle {
+    transform: scale(1.2);
+    transform: rotateX(0deg);
+    opacity: 1; }
+  .items-block:hover .item-line {
+    border-top: 0.3rem solid #e62b4c; }
+  .items-block:hover .item-info__title {
+    color: #e62b4c; }
+  .items-block .item-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    line-height: 2.4rem;
+    top: 1.5rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+    .items-block .item-box__overlay-circle {
+      background: rgba(33, 39, 57, 0.4);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0rem;
+      z-index: 10;
+      border-radius: 50%;
+      opacity: 0;
+      transform: rotateX(90deg);
+      transform-origin: bottom;
+      transition: all 0.8s;
+      text-align: center; }
+    .items-block .item-box__img-item-1 {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: all .5s;
+      background-size: cover;
+      margin: auto;
+      top: 0rem; }
+      .items-block .item-box__img-item-1 img {
+        width: 85%;
+        padding: 7%;
+        border-radius: 50%; }
+    .items-block .item-box .item-box__icon-prop {
+      color: #ffffff;
+      font-size: 2.6rem;
+      position: absolute;
+      top: calc(50% - 4.2rem);
+      line-height: 6.300000000000001rem; }
+      .items-block .item-box .item-box__icon-prop:hover {
+        color: #e62b4c; }
+  .items-block .item-line {
+    position: relative;
+    z-index: 2;
+    width: 30rem;
+    height: 11.2rem;
+    left: 1.1rem;
+    top: -4.9rem;
+    background-color: #f9f9f9; }
+  .items-block .item-info {
+    position: relative;
+    z-index: 4;
+    width: 30rem;
+    height: 11.2rem;
+    left: 1.8rem;
+    top: -16.1rem;
+    background-color: #f9f9f9;
+    text-align: center; }
+    .items-block .item-info__subtitle {
+      font-family: "Cookie", cursive;
+      font-size: 2.6rem;
+      line-height: 3.9000000000000004rem;
+      color: #e62b4c;
+      margin: 0;
+      font-weight: 400; }
+    .items-block .item-info__title {
+      font-size: 2.6rem;
+      line-height: 3.9000000000000004rem;
+      color: #212739;
+      font-weight: 900;
+      margin: 0; }
+  .items-block .price-item {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    top: 26rem;
+    left: 13.1rem;
+    background-color: #ffffff;
+    text-align: center; }
+    .items-block .price-item__price-num {
+      font-family: "Cookie", cursive;
+      font-size: 2.6rem;
+      line-height: 6rem;
+      color: #212739; }
+    .items-block .price-item__dollar {
+      position: absolute;
+      color: #e62b4c; }
+  .items-block__title-block {
+    position: absolute;
+    top: 1.7rem;
+    left: 12.1rem;
+    z-index: 0; }
+  .items-block__title-and-price {
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    border-radius: 0 5rem 5rem 0;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    text-align: left; }
+  .items-block__name-title {
+    font-family: "Cookie", cursive;
+    font-size: 3.2rem;
+    color: black;
+    padding: 0.5rem 1.5rem 0.5rem 6rem; }
+  .items-block__price {
+    position: absolute;
+    right: 5.5rem;
+    padding-top: 0.9rem;
+    top: 1.8rem; }
+  .items-block__price-number {
+    color: #e62b4c;
+    font-weight: 400;
+    font-family: Cookie, cursive;
+    font-size: 4.2rem; }
+  .items-block__description {
+    margin-left: 5.1rem;
+    width: 62%; }
+
+.menue-of-the-day {
+  position: relative;
+  background-image: url(../images/menu-bg.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll,scroll, scroll,scroll,fixed;
+  width: 100%;
+  /*&__day-meals{
+   // line-height: 11rem;
+  }*/ }
+  .menue-of-the-day__zigzag {
+    background-image: url(../images/zikzak-bottom-ash-light.png), url(../images/zikzak-bottom-white.png), url(../images/zikzak-top-ash-light.png), url(../images/zikzak-top-white.png);
+    background-position-x: center;
+    background-position-y: top,top,bottom,bottom;
+    background-repeat: no-repeat; }
+  .menue-of-the-day__overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 11rem 0;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .menue-of-the-day__h3-of-food-recipe {
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem;
+    color: #212739; }
+  .menue-of-the-day__h2-of-the-day {
+    font-family: "Cookie", cursive;
+    font-size: 6.8rem;
+    color: #e62b4c;
+    margin: 0;
+    line-height: 8rem;
+    font-weight: 500; }
+  .menue-of-the-day__meals {
+    display: flex;
+    justify-content: center; }
+  .menue-of-the-day__meals-items {
+    text-align: center;
+    margin-left: 2.2rem; }
+  .menue-of-the-day--meals-display {
+    display: flex;
+    align-items: center; }
+  .menue-of-the-day--img-class {
+    margin-right: 0.4rem; }
+
+.milestone {
+  position: relative;
+  background-image: url(../images/milestone-bg.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  top: -9.2rem; }
+  .milestone__zigzag {
+    background-image: url(../images/zikzak-bottom-ash-light.png), url(../images/zikzak-bottom-white.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat; }
+  .milestone__overlay-milestone {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 11rem 0;
+    background-color: #212739;
+    opacity: 0.9; }
+  .milestone__miliston-counter {
+    margin-bottom: 4.2rem;
+    color: #ffffff;
+    text-align: center;
+    width: 50%; }
+  .milestone__counter-text {
+    font-family: "Cookie", cursive;
+    font-size: 2.6rem;
+    line-height: 3.9000000000000004rem;
+    font-weight: 400;
+    letter-spacing: .05rem; }
+  .milestone__counter-num {
+    font-size: 4.2rem;
+    font-weight: 900; }
+  .milestone__video {
+    background-image: url(../images/video.jpg);
+    background-size: cover;
+    width: 41.5%;
+    margin-right: 7.5rem;
+    text-align: center;
+    top: -2.6rem;
+    position: relative; }
+  .milestone__overlay-video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 11rem 0;
+    background: rgba(33, 39, 57, 0.7);
+    height: 50%; }
+  .milestone__icons-block:hover .milestone__video-play-icon {
+    color: #ffffff; }
+  .milestone__icons-block:hover .milestone__play-icon {
+    color: #e62b4c; }
+  .milestone__video-play-icon {
+    font-size: 10.8rem;
+    font-weight: 900;
+    color: #e62b4c; }
+  .milestone__play-icon {
+    position: relative;
+    color: #ffffff;
+    font-size: 5.5rem;
+    margin-left: -10.5rem;
+    top: -1.9rem;
+    left: 2.8rem; }
+
+.dropdown {
+  list-style: none;
+  background-color: #e62b4c;
+  min-width: 16rem;
+  visibility: hidden;
+  position: absolute;
+  top: 13rem;
+  padding: 0.5rem 0rem;
+  margin: -0.8rem;
+  flex-direction: column; }
+  .dropdown:hover {
+    visibility: visible; }
+  .dropdown--drop-specific {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    padding: 1rem 1rem; }
+  .dropdown--child-hover:hover {
+    transition-duration: .3s;
+    padding: .6rem 1.5rem; }
+  .dropdown--subdrop {
+    top: 16rem;
+    left: 15.9rem; }
+  .dropdown--subdrop-1 {
+    top: 4.9rem;
+    left: 16.8rem; }
+
+.slidshow {
+  background-color: #e62b4c;
+  width: 50%;
+  height: 37rem;
+  position: relative;
+  top: -9.2rem; }
+  .slidshow--twitter-feedback {
+    background-color: #f1f1f1; }
+  .slidshow__wripper {
+    width: 60%;
+    overflow: hidden;
+    margin-left: 8.4rem; }
+  .slidshow__slider-header {
+    margin-left: 7.1rem;
+    margin-top: 4.4rem; }
+  .slidshow__slides {
+    animation: slide-show;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running; }
+  .slidshow--imgshow {
+    border: 1.2rem solid  #f9f9f9;
+    border-radius: 50%;
+    width: 15.0rem;
+    height: 15.0rem; }
+  .slidshow--text-decoration {
+    color: #ffffff;
+    font-family: "Cookie", cursive;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    font-weight: 400;
+    margin-top: 25px; }
+  .slidshow--color-text {
+    color: #e62b4c; }
+  .slidshow__images-slider {
+    width: 25%;
+    position: relative; }
+  .slidshow__text-slider {
+    width: 100%;
+    position: relative;
+    color: #ffffff; }
+  .slidshow__client-name {
+    font-family: "Cookie", cursive;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 200; }
+  .slidshow--color-p {
+    color: rgba(33, 39, 57, 0.7); }
+
+.small-item {
+  position: relative;
+  margin-top: 2.1rem;
+  width: 50%;
+  height: 15rem;
+  animation: move 1.5s; }
+  .small-item:hover .item-box__img-item-1 {
+    transform: scale(1.2); }
+  .small-item:hover .items-block__title-and-price {
+    background-color: #e62b4c;
+    color: #ffffff; }
+  .small-item:hover .items-block__name-title, .small-item:hover .items-block__price-number {
+    color: #ffffff; }
+
+.header-center {
+  text-align: center;
+  margin: auto; }
+  .header-center--text {
+    color: #ffffff;
+    font-size: 11rem; }
+    .header-center--text--h3-hot-spicy {
+      font-family: "Cookie", cursive;
+      font-weight: 400; }
+    .header-center--text--h2-American {
+      font-weight: 900;
+      margin: 0 0 1.6rem;
+      line-height: 13rem; }
+  .header-center--text-center {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    width: 98%;
+    padding-bottom: 5rem;
+    margin-top: 10.5rem; }
+  .header-center--h3-About {
+    color: #212739;
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem; }
+  .header-center--h2-welcom {
+    color: #e62b4c;
+    font-family: "Cookie", cursive;
+    font-size: 6.8rem;
+    line-height: 8rem;
+    font-weight: 500; }
+  .header-center--center-p {
+    display: block;
+    margin-left: 5.5rem;
+    padding: 0 20%;
+    margin-bottom: 4.2rem;
+    line-height: 2.6rem; }
+  .header-center--special-div {
+    margin-bottom: 6.8rem;
+    margin-top: 6.8rem;
+    width: 100%; }
+
+.footer-section {
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  width: 100%;
+  height: 50rem;
+  position: relative; }
+  .footer-section__overlay-footer {
+    background: #212739;
+    opacity: .95;
+    width: 100%;
+    height: 100%; }
+  .footer-section__logo-footer {
+    width: 100%;
+    top: 5rem;
+    left: 47rem; }
+  .footer-section__top-area {
+    width: 100%;
+    position: absolute; }
+  .footer-section__info-about-us {
+    width: 25%;
+    position: relative;
+    top: 22rem; }
+  .footer-section__h3-footer {
+    color: #fff;
+    font-family: "Cookie", cursive;
+    font-size: 4.2rem;
+    font-size: 4.2rem;
+    font-weight: 400;
+    margin-bottom: 2.6rem;
+    letter-spacing: .08rem;
+    opacity: .7; }
+  .footer-section__p-footer {
+    color: #999;
+    font-weight: 400;
+    margin-left: 7.6rem; }
+  .footer-section__footer-li {
+    padding-right: 1.2rem;
+    padding-left: 0rem; }
+  .footer-section__footer-icons {
+    margin: 0 auto;
+    top: 0.6rem; }
+  .footer-section__bottom-area {
+    background-color: #e62b4c;
+    padding: 2.6rem 0; }
+  .footer-section__bottom-text-footer {
+    color: #fff;
+    line-height: 2.4000000000000004rem;
+    font-weight: 400;
+    opacity: .7; }
+
+.nav-main {
+  background-color: transparent;
+  color: black; }
+
+.header {
+  background-image: url(../images/zikzak-bottom-white.png), url(../images/zikzak-bottom-ash-light.png), url(../images/zikzak-top-white.png), url(../images/zikzak-top-ash-light.png), url(../images/zikzak-bg.jpg);
+  background-position-x: center;
+  background-position-y: top,top,bottom,bottom,top;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 55rem; }
+
+.contact-section {
+  position: relative;
+  display: flex;
+  width: 100%; }
+
+/* contacts*/
+.contacts-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-right: 3.0rem;
+  background-color: #ffffff; }
+
+/*nav-bar*/
+.nav-logo-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+/*items-section*/
+.items-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding-bottom: 10.5rem; }
+
+/*small-items-box*/
+.menue-day-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 7%;
+  padding-right: 7%; }
+
+/*milestone-block*/
+.milestone-counter-and-video-block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.milestone-counter-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  top: -2.6rem;
+  position: relative; }
+
+/*slideshow-feedback*/
+.slid-show-block {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%; }
+
+/*footer*/
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; }

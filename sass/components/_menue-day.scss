@@ -1,0 +1,69 @@
+.menue-of-the-day{
+
+  position: relative;
+   background-image: 
+     url(../images/menu-bg.jpg) ;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-attachment:scroll,scroll, scroll,scroll,fixed;
+    width: 100%;
+
+    &__zigzag{
+        background-image: 
+        url(../images/zikzak-bottom-ash-light.png)  
+        ,url(../images/zikzak-bottom-white.png)    
+        ,url(../images/zikzak-top-ash-light.png)
+        ,url(../images/zikzak-top-white.png) ;
+        background-position-x: center;
+        background-position-y: top,top,bottom,bottom;
+        background-repeat: no-repeat;
+    }
+    
+    &__overlay{
+        @include overlay-color;
+        background-color: rgba(255,255,255,.9);
+    }
+
+&__h3-of-food-recipe{
+    font-size: 1.6rem;
+    line-height: 2.4000000000000004rem;
+    color: #212739;
+}
+&__h2-of-the-day{
+    font-family: $font;
+    font-size: 6.8rem;
+    color: $primary-color;
+    margin: 0;
+    line-height: 8rem;
+    font-weight: 500;
+}
+/*&__day-meals{
+   // line-height: 11rem;
+  }*/
+  &__meals{
+      display: flex;
+      justify-content:center;
+     
+  }
+  &__meals-items{
+     //margin: 
+    text-align: center;
+   // border: 0.2rem solid transparent;
+    margin-left: 2.2rem;
+  }
+  &--meals-display{
+    display: flex;
+   // justify-content: space-evenly;
+    align-items: center; //or  justify-content:center;
+    
+   }
+   &--img-class{
+    margin-right: 0.4rem;
+}
+}
+
+
+
+

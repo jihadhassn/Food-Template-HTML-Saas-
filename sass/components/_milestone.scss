@@ -1,0 +1,87 @@
+.milestone{
+    position: relative;
+    background-image:
+     url(../images/milestone-bg.jpg);
+     background-position-x: center;
+     background-position-y: top;
+     background-repeat: no-repeat;
+      background-size: cover;
+     background-attachment:fixed;
+     width: 100%;
+     top:-9.2rem;
+
+     &__zigzag{
+        background-image:
+        url(../images/zikzak-bottom-ash-light.png)
+        ,url(../images/zikzak-bottom-white.png) ;
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+    }
+     &__overlay-milestone{
+        @include overlay-color;
+        background-color: $secondry-color;
+        opacity: 0.9;     
+       
+    }
+    &__miliston-counter
+    {
+        margin-bottom: 4.2rem;
+        color: $white-color;
+        text-align: center;
+        width: 50%;
+    }
+    &__counter-text{
+        font-family: $font;
+        font-size:$font-size;
+        line-height: 3.9000000000000004rem;
+        font-weight: 400;
+        letter-spacing: .05rem;
+    }
+    &__counter-num{
+       
+        font-size: 4.2rem;
+        font-weight: 900;
+    }
+
+    &__video{
+        background-image: url(../images/video.jpg) ;
+        background-size: cover;
+        width: 41.5%;
+        margin-right: 7.5rem;
+        text-align: center;
+        top: -2.6rem;
+        position: relative;
+       // color: $primary-color;
+    }
+  &__overlay-video{
+    @include overlay-color;
+    background: rgba(33,39,57,.7);
+    height: 50%;
+  }
+  &__icons-block{
+      &:hover{
+        .milestone__video-play-icon{
+         @include color-icon($white-color);
+          }
+          .milestone__play-icon
+          {
+            @include color-icon($primary-color);
+          }
+      }
+  }
+  &__video-play-icon{
+    font-size: 10.8rem;
+    font-weight: 900;
+    color: $primary-color;
+  }
+  &__play-icon{
+    position: relative;
+    color: $white-color;
+    font-size: 5.5rem;
+    margin-left: -10.5rem;
+    top: -1.9rem;
+    left: 2.8rem;
+  }
+  
+}

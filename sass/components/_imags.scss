@@ -1,0 +1,34 @@
+.logo{  
+    max-width: 12.0rem;
+    margin-top: 4.3rem;
+    margin-left: 6.5rem;
+    position: absolute;
+    width: 10%;
+    //background-color: aquamarine;
+}
+
+.bg-imge{
+    background:
+    url(../images/zikzak-bottom-white.png)  
+     ,url(../images/zikzak-bottom-ash-light.png)
+     ,url(../images/zikzak-top-white.png)  
+    ,url(../images/zikzak-top-ash-light.png)
+    ,url(../images/zikzak-bg.jpg);
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: top,top,bottom,bottom,top;
+   //background-size: cover;
+    overflow: hidden;
+    height: 85rem;
+    margin-top:-1.6rem;
+    flex-wrap: wrap;
+    display: flex;
+
+&--background{
+    background-image: url(../images/zikzak-top-white.png) bottom center no-repeat;
+    width: 100%;
+}
+
+}
+   
+
